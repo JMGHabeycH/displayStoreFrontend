@@ -1,9 +1,15 @@
 import React from 'react'
 import SearchBar from '../../components/SearchBar/SearchBar'
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
   
+  const handleClick = () => {
+    navigate(`/create`);
+  }
   
   
   return (
@@ -12,6 +18,11 @@ const Home = () => {
             <h1 className='display-4 fw-bold'>BuyMe App</h1>
             <div className='container-lg'>
                 <SearchBar  />
+            </div>
+            <div className="text-center mt-5">
+              <button className="btn btn-primary btn-lg" onClick={handleClick}>
+                Create product
+              </button>
             </div>
         </div>
     </div>

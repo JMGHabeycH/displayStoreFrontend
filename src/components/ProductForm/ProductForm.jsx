@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import { createProduct } from '../../api';
-
+import { useNavigate } from 'react-router-dom';
 
 
 const ProductForm = () => {
+
+    const navigate = useNavigate();
 
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
@@ -20,6 +22,8 @@ const ProductForm = () => {
         const file = e.target.files[0];
         setImage(file);
       };
+
+
   
 
     const handleSubmit = async (e) => {
@@ -52,9 +56,12 @@ const ProductForm = () => {
         setUsersRating(0); 
         setImage(null);
         document.getElementById('image').value = null;
+        navigate(`/`);
       } catch (e) {
         console.log(e || 'Error al crear el producto');
       }
+
+      
     }
   
   return (

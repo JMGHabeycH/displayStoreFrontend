@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     baseURL: "https://displaystorebackend.onrender.com/api",
-    timeout: 10000,
+    timeout: 0,
     headers: {
         'Content-Type': 'application/json',
     },
