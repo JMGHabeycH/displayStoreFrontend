@@ -17,7 +17,7 @@ This is a full-stack web application built from scratch that serves as the main 
 - **📄 Product Detail Page**: Each product has a dedicated page displaying all its information.
 - **➕ Create Product Form**: A form to add new products, including image upload functionality.
 ---
-##🧱 Project Structure
+## 🧱 Project Structure
 /client        → React frontend  
 /server        → Node.js + Express backend  
 
