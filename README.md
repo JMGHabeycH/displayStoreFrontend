@@ -1,12 +1,41 @@
-# React + Vite
+🛍️ Display Store Platform
+This is a full-stack web application built from scratch that serves as the main product search page for an online store. It includes product browsing, detailed product view, and a form for adding new products with images.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tech Stack
+Backend: (https://github.com/JMGHabeycH/displayStoreBackend)
+Node.js
+Express.js
+MongoDB Atlas (cloud-based NoSQL database)
+Mongoose (MongoDB ODM)
 
-Currently, two official plugins are available:
+Frontend:
+React.js
+Axios (for API requests)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📌 Features
+🔍 Product Search Page: Allows users to search and view a list of products dynamically fetched from the database.
 
-## Expanding the ESLint configuration
+📄 Product Detail Page: Each product has a dedicated page displaying all its information.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+➕ Create Product Form: A form to add new products, including image upload functionality.
+
+🧱 Project Structure
+/client        → React frontend  
+/server        → Node.js + Express backend  
+
+Backend (/server)
+Connects to MongoDB Atlas.
+
+Provides API endpoints to:
+Fetch products filtered by search.
+Fetch a single product by ID.
+Add a new product.
+
+Frontend (/client)
+Built with React.
+
+Pages include:
+Home (Product Search)
+Product Listing.
+Product Detail.
+Create Product Form.
